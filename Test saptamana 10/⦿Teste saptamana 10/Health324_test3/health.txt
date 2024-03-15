@@ -1,0 +1,3 @@
+Glicemie: value = 125.0, date = '1980-02-02'
+BMI: value = 40.0, date = '2020-02-02'
+BP: systolic = 150, diastolic = 100, date = '2020-02-02'

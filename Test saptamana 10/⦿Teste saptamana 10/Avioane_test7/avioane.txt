@@ -1,0 +1,4 @@
+HardwareInstrument:  code = '116', maintenance = true, measurementType = 'altitudine, price = 100.0
+SoftwareInstrument:  code = '226', maintenance = true, version = 8, price = 200.0
+SoftwareInstrument:  code = '223', maintenance = true, version = 13, price = 400.0
+HardwareInstrument:  code = '115', maintenance = true, measurementType = 'stare_motor, price = 1000.0

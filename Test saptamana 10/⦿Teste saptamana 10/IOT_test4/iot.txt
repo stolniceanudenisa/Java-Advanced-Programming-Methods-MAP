@@ -1,0 +1,2 @@
+SmokeSensor: length = 1, producer = mihai, last_recording = 12.0, price = 25
+TemperatureSensor: diameter = 3, producer = mihai, last_recording = 3.0, price = 9

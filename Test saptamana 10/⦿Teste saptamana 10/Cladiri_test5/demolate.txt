@@ -1,0 +1,2 @@
+House: constructionYear = 1934, isHistorical = false
+House: constructionYear = 2005, isHistorical = false

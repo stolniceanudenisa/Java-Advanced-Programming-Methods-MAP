@@ -1,0 +1,12 @@
+1. Write a Java program that prints the sum of two integer numbers given as command line parameters.
+2. Write a Java program that prints the maximum value of two integer numbers given as command line parameters.
+3. Write a Java program that determines if an integer number appears in an array of integer numbers given as command line
+parameters, using sequential searching and binary search.
+4. Write a Java program that sorts ascendingly an array of integer numbers given as command line parameters.
+5. Write a Java program that finds the longest contiguous subsequence having the property that all elements are equals.
+6. Write a Java program that finds the longest contiguous subsequence having the property that all elements are prime.
+
+
+
+
+

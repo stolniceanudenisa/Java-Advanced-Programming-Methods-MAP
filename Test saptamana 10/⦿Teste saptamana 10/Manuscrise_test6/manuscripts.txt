@@ -1,0 +1,4 @@
+Manuscript:  nr_words = 1000 nr_pages = 25 author = Tolstoi
+Manuscript:  nr_words = 3000 nr_pages = 4 author = Dostoievski
+Presentation:  nr_slides = 700 text = mar author = Andrei
+Presentation:  nr_slides = 1000 text = piersica author = Ana

@@ -1,0 +1,5 @@
+House: constructionYear = 1645, isHistorical = true
+House: constructionYear = 1900, isHistorical = true
+Block: constructionYear = 1967, totalApartments = 100, occupiedApartments = 100
+Block: constructionYear = 2010, totalApartments = 100, occupiedApartments = 100
+House: constructionYear = 2012, isHistorical = true

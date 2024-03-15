@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.examen.controller.ViewController">
+   <children>
+      <TextField fx:id="textFieldTitlu" alignment="CENTER" layoutX="32.0" layoutY="54.0" prefHeight="26.0" prefWidth="117.0" promptText="Titlu" />
+      <TextField fx:id="textFieldPictor" alignment="CENTER" layoutX="157.0" layoutY="54.0" prefHeight="26.0" prefWidth="117.0" promptText="Pictor" />
+      <TextField fx:id="textFieldTematica" alignment="CENTER" layoutX="281.0" layoutY="54.0" prefHeight="26.0" prefWidth="117.0" promptText="Tematica" />
+      <TextField fx:id="textFieldCelebritate" alignment="CENTER" layoutX="405.0" layoutY="54.0" prefHeight="26.0" prefWidth="117.0" promptText="Celebritate" />
+      <Button layoutX="529.0" layoutY="54.0" mnemonicParsing="false" onAction="#add" text="Add" />
+      <Button layoutX="241.0" layoutY="90.0" mnemonicParsing="false" onAction="#showAllConsole" text="Show all in console" />
+      <Button layoutX="288.0" layoutY="126.0" mnemonicParsing="false" onAction="#subpunct2" text="2" />
+      <Button layoutX="288.0" layoutY="161.0" mnemonicParsing="false" onAction="#subpunct3" text="3" />
+      <Button layoutX="288.0" layoutY="194.0" mnemonicParsing="false" onAction="#subpunct4" text="4" />
+      <Button layoutX="286.0" layoutY="228.0" mnemonicParsing="false" onAction="#subpunct5a" text="5a" />
+      <Button layoutX="285.0" layoutY="258.0" mnemonicParsing="false" onAction="#subpunct5b" text="5b" />
+      <Button layoutX="286.0" layoutY="290.0" mnemonicParsing="false" onAction="#subpunct5c" text="5c" />
+   </children>
+</AnchorPane>

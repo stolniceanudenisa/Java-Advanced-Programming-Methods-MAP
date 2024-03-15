@@ -1,0 +1,4 @@
+000,true,aaaa,1000.0
+111,false,testt,1000.0
+2222,true,sus,300.0
+4444,false,directie,100.0

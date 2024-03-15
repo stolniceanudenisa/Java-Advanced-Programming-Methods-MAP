@@ -1,0 +1,2 @@
+StrenghtMachine: motion_level = 40, muscle_group = 'core', serialNumber = 999, maintenance = true, price = 800
+CardioMachine: resistance_level = 40, serialNumber = 2222, maintenance = true, price = 200

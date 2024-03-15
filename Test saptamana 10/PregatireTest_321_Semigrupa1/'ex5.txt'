@@ -1,0 +1,2 @@
+SoftwareInstrument{version=2, code='2', maintenance=true}
+HardwareInstrument{measurementType='Starea motorului', code='2', maintenance=true}
