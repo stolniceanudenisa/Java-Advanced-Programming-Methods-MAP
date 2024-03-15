@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="GradeBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="720.0" stylesheets="@../resources/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.GradeController">
+   <top>
+      <AnchorPane prefHeight="98.0" prefWidth="720.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="282.0" layoutY="36.0" text="Grades Management System" textFill="WHITE">
+               <font>
+                  <Font name="Georgia Bold" size="29.0" />
+               </font>
+            </Label>
+            <Button fx:id="imageButton" layoutX="52.0" layoutY="37.0" mnemonicParsing="false" onAction="#handleExit" prefHeight="35.0" prefWidth="35.0" stylesheets="@../resources/style.css" textFill="WHITE" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="630.0" AnchorPane.topAnchor="35.0" />
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="34.0" prefWidth="720.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="14.0" layoutY="5.0" text="Copyright © Teofana Enachioiu" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </bottom>
+   <left>
+      <AnchorPane prefHeight="427.0" prefWidth="414.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tableView" layoutX="12.0" layoutY="11.0" prefHeight="443.0" prefWidth="406.0">
+              <columns>
+                <TableColumn fx:id="tableColumnId" prefWidth="60.0" text="Nr. matr." />
+                  <TableColumn fx:id="tableColumnNume" prefWidth="220.0" resizable="false" text="Nume" />
+                  <TableColumn fx:id="tableColumnTema" prefWidth="60.0" resizable="false" text="Tema" />
+                  <TableColumn fx:id="tableColumnNota" prefWidth="60.0" resizable="false" text="Nota" />
+              </columns>
+               <cursor>
+                  <Cursor fx:constant="MOVE" />
+               </cursor>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="397.0" prefWidth="362.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane layoutX="14.0" layoutY="72.0" prefHeight="145.0" prefWidth="268.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="290.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="128.0" minWidth="10.0" prefWidth="70.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="199.0" minWidth="10.0" prefWidth="198.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="labelLab" text="Laboratory:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelStudent" text="Student:" textFill="WHITE" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelGrade" text="Grade:" textFill="WHITE" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelFeedback" text="Feedback:" textFill="WHITE" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textFieldGrade" opacity="0.7" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextArea fx:id="textAreaFeedback" opacity="0.7" prefHeight="66.0" prefWidth="197.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <ComboBox fx:id="comboBoxLab" onAction="#handleComboLab" opacity="0.7" prefHeight="25.0" prefWidth="198.0" GridPane.columnIndex="1" />
+                  <ComboBox fx:id="comboBoxNumeStudent" editable="true" opacity="0.7" prefHeight="25.0" prefWidth="197.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+            <Button fx:id="addGradeButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleAddGradeButton" prefHeight="40.0" prefWidth="130.0" text="Add grade" AnchorPane.bottomAnchor="414.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="160.0" AnchorPane.topAnchor="14.0" />
+            <Button fx:id="filterButton" layoutX="151.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleFilterButton" prefHeight="40.0" prefWidth="130.0" text="Filter" AnchorPane.bottomAnchor="414.0" AnchorPane.topAnchor="14.0" />
+            <Button fx:id="addButton" layoutX="243.0" layoutY="257.0" mnemonicParsing="false" onAction="#handleAddButton" text="Add" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="260.0" />
+            <CheckBox fx:id="checkBoxMotivation" layoutX="153.0" layoutY="264.0" mnemonicParsing="false" onAction="#handleMotivation" text="Motivation" textFill="WHITE" />
+            <GridPane layoutX="17.0" layoutY="291.0" prefHeight="145.0" prefWidth="268.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="90.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="128.0" minWidth="10.0" prefWidth="70.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="199.0" minWidth="10.0" prefWidth="198.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="labelLabFilter" text="Laboratory:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelStudentFilter" text="Student:" textFill="WHITE" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelGroupFilter" text="Group:" textFill="WHITE" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="comboBoxLabFilter" opacity="0.7" prefHeight="25.0" prefWidth="198.0" GridPane.columnIndex="1" />
+                  <ComboBox fx:id="comboBoxNumeFilter" editable="true" opacity="0.7" prefHeight="25.0" prefWidth="197.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <ComboBox fx:id="comboBoxGroupFilter" opacity="0.7" prefHeight="25.0" prefWidth="198.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label fx:id="labelTimeFilter" text="Time:" textFill="WHITE" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <children>
+                        <DatePicker fx:id="datePickerFilter1" layoutY="4.0" opacity="0.7" prefHeight="25.0" prefWidth="91.0" />
+                        <DatePicker fx:id="datePickerFilter2" layoutX="106.0" layoutY="4.0" opacity="0.7" prefHeight="25.0" prefWidth="91.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </GridPane>
+            <Button fx:id="buttonClear" layoutX="19.0" layoutY="260.0" mnemonicParsing="false" onAction="#handleClear" text="Clear" AnchorPane.bottomAnchor="183.0" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="240.0" AnchorPane.topAnchor="260.0" />
+            <Button fx:id="buttonAverage" layoutX="15.0" layoutY="442.0" mnemonicParsing="false" onAction="#handleMedieStudenti" text="Average" />
+            <Button layoutX="90.0" layoutY="442.0" mnemonicParsing="false" onAction="#handlePromovat" text="Average&gt;=4" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
